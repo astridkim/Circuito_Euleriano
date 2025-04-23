@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Circuito Euleriano</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Verificador de Circuito Euleriano</h1>
+  </header>
+
+  <main>
+    <section class="controls">
+      <button onclick="addVertex()"> Vértice</button>
+      <button onclick="addEdge()">Arista</button>
+      <button onclick="deleteVertex()">Eliminar Vértice</button>
+      <button onclick="checkEulerian()">¿Es Euleriano?</button>
+    </section>
+
+    <canvas id="graphCanvas" width="800" height="500"></canvas>
+
+    <section class="output" id="output"></section>
+  </main>
+
+  <footer>
+    <p> Matemática para Computación 2, por Astrid Vanesa Kim Ortiz
+        <br> 202300685
+        <br> Universidad de San Carlos de Guatemala
+        <br> 
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
